@@ -1,0 +1,87 @@
+.forgot_pass {
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    height: 20px;
+    width: 126px;
+}
+
+
+
+.form-gap {
+    padding-top: 70px;
+}
+.back{
+    width: 50%;
+    /* background-color: red; */
+    height: 20px;
+    margin: auto;
+    position: relative;
+}
+.back_index {
+    position: relative;
+    height: 20px;
+    width: 100px;
+    overflow: hidden;
+    /* z-index: 10; */
+    /* background-color: red; */
+    display: block;
+    margin: auto;
+}
+
+.back_index:hover::before {
+    transition: ease 0.3s;
+    left: 0px;
+    opacity: 1;
+}
+
+.back_index::before {
+    content: "\f100";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 20px;
+    height: 100%;
+    font-family: "FontAwesome";
+    line-height: 20px;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+/* ////////////////////////// */
+.confirm_pass {
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(to right, #0984e3, #74b9ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.confirm_pass h1 {
+    color: #2d3436;
+    margin: 16px 0;
+    user-select: none;
+}
+.confirm_pass input {
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #0984e3;
+    cursor: pointer;
+    transition: ease 0.3s;
+    color: #2d3436;
+}
+.confirm_pass input:hover {
+    background-color: #74b9ff;
+}
+.confirm_pass p {
+    margin-top: 0;
+    color: #2d3436;
+}
